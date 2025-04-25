@@ -1,0 +1,66 @@
+/* Normalizacion */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #ffffff;
+    color: black;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+/* Estilos */
+
+.hero , .about {
+    width: 100%;
+}
+
+.navbar {
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(0, 12, 122);
+    padding: 15px, 20px;
+
+    color: white;
+}
+
+.nav-links {
+
+    list-style:none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url(../img/hero.jpg);
+    background-attachment: fixed;
+    position: relative;
+    
+
+}

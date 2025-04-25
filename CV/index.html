@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+
+    <!-- METADATOS -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum de Fernando Cordero">
+    <link href="./Portafolio_files/css2" rel="stylesheet">
+
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Portafolio</title>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header >
+        <nav class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="https://informatica.fca.unam.mx/pluginfile.php/47320/mod_resource/intro/cv.html#inicio">Inicio</a></li>
+                <li><a href="https://informatica.fca.unam.mx/pluginfile.php/47320/mod_resource/intro/cv.html#sobre-mi">Sobre Mí</a></li>
+                <li><a href="https://informatica.fca.unam.mx/pluginfile.php/47320/mod_resource/intro/cv.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="content">
+            <h1>Nombre Completo</h1>
+            <p>Desarrollador Web | Ingeniero de Software</p>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="about">
+    <div class="overlay">
+        <div class="image">
+            <img src="./Portafolio_files/pr.png" alt="Foto de perfil">
+        </div>
+        
+        <div class="text">
+            <h2>Sobre Mí</h2>
+            <p>Soy un apasionado por la tecnología y el desarrollo de software, con experiencia en la creación de soluciones eficientes e innovadoras.</p>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidades-container">
+            <div class="habilidad" onclick="toggleInfo(this)">
+                <img src="./Portafolio_files/img1.jpg" alt="Desarrollo Web">
+                <div class="info">
+                    <h3>Desarrollo Web</h3>
+                    <p>Experiencia en HTML, CSS, JavaScript y frameworks modernos para sitios responsivos.</p>
+                </div>
+            </div>
+
+            <div class="habilidad" onclick="toggleInfo(this)">
+                <img src="./Portafolio_files/img2.jpg" alt="Diseño UI/UX">
+                <div class="info">
+                    <h3>Diseño UI/UX</h3>
+                    <p>Creación de interfaces intuitivas con herramientas como Figma y Adobe XD.</p>
+                </div>
+            </div>
+
+            <div class="habilidad" onclick="toggleInfo(this)">
+                <img src="./Portafolio_files/img3.jpg" alt="Optimización SEO">
+                <div class="info">
+                    <h3>Optimización SEO</h3>
+                    <p>Estrategias de SEO para mejorar el posicionamiento en buscadores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="about">
+    <div class="overlay">
+        <div class="image">
+            <img src="./Portafolio_files/img4.jpg" alt="Foto de perfil">
+        </div>
+        
+        <div class="text">
+            <h2>Objetivo</h2>
+            <p>Soy un apasionado por la tecnología y el desarrollo de software, con experiencia en la creación de soluciones eficientes e innovadoras.</p>
+        </div>
+    </div>
+    </section>
+
+
+    <header class="header">
+        <h1>Trayectoria Estudiantil</h1>
+        <p>Un recorrido por mi formación académica</p>
+    </header>
+
+    <section class="timeline">
+        <div class="timeline-item">
+            <img src="./Portafolio_files/img6.jpg" alt="Primaria">
+            <h3>Educación Primaria</h3>
+            <p>Mis primeros pasos en el aprendizaje.</p>
+        </div>
+        <div class="timeline-item">
+            <img src="./Portafolio_files/img7.jpg" alt="Secundaria">
+            <h3>Educación Secundaria</h3>
+            <p>Descubriendo nuevas materias y habilidades.</p>
+        </div>
+        <div class="timeline-item">
+            <img src="./Portafolio_files/img8.jpg" alt="Preparatoria">
+            <h3>Preparatoria</h3>
+            <p>Preparación para la universidad y el futuro.</p>
+        </div>
+    </section>
+
+
+    <div class="container about">
+        <!-- Imagen a la izquierda -->
+        <div class="image-container">
+            <img src="./Portafolio_files/img9.jpg" alt="Contacto">
+        </div>
+
+        <!-- Formulario a la derecha -->
+        <div class="form-container">
+            <h2>Contáctanos</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required="">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required="">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required=""></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        function toggleInfo(element) {
+            element.classList.toggle("active");
+        }
+    </script>
+
+
+
+</body></html>
